@@ -1,0 +1,114 @@
+.previousButton .previousIconContainer, .nextButton .nextIconContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #1C1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 85%;
+  position: absolute;
+  z-index: 1;
+}
+.previousButton .previousIconContainer{
+  left: 270%;
+}
+.nextButton .nextIconContainer{
+  right: 270%;
+}
+.previousButton .previousIcon {
+  background-image: url('../../images/svgs/previous-icon.svg');
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-size: contain;
+}
+.nextButton .nextIcon {
+  background-image: url('../../images/svgs/next-icon.svg');
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-size: contain;
+}
+.carouselIndicator {
+  background-color: #1C1A1A !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+.imageWrappeer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 7rem;
+}
+@media only screen and (max-width:992px){
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 78%;
+  }
+  .imageWrappeer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top:93%;
+  }
+
+}
+@media only screen and (max-width:760px){
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 90%;
+  }
+  .previousButton .previousIconContainer{
+    left: 250%;
+  }
+  .nextButton .nextIconContainer{
+    right: 250%;
+  }
+  .imageWrappeer{
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width:550px){
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 91%;
+  }
+  .previousButton .previousIconContainer{
+    left: 210%;
+  }
+  .nextButton .nextIconContainer{
+    right: 210%;
+  }
+  .imageWrappeer{
+    gap: 20px;
+  }
+  .carouselIndicator{
+    /* display: none; */
+  }
+}
+
+@media only screen and (max-width:470px){
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 88%;
+  }
+}
+
+@media only screen and (max-width:350px){
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 86%;
+  }
+  .previousButton .previousIconContainer{
+    left: 200%;
+  }
+  .nextButton .nextIconContainer{
+    right: 200%;
+  }
+  
+}

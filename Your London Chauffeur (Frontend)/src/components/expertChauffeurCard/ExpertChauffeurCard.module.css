@@ -1,0 +1,50 @@
+.cardContainer{
+  background-color: #F9F9F9;
+  width: 325px;
+  height: 460px;
+}
+.chauffeurName{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #010101;
+  margin-top: 0.7rem;
+}
+.chauffeur{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #696969;
+}
+.chauffeurImage{
+  width: 325px;
+  height: 400px;
+}
+.imageWrapper{
+  position: relative;
+}
+.socialIcons{
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 15px 30px;
+  display: none;
+}
+
+.cardContainer:hover .socialIcons{
+  display: block;
+}
+
+.iconsWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}

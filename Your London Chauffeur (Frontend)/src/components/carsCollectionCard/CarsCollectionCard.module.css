@@ -1,0 +1,238 @@
+.carsCollectionSection{
+  background-color: #fff;
+  padding: 6rem 1rem;
+  border-bottom: 1px solid #EBEBEB;
+}
+.carName{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000;
+}
+.carDescription{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin-top: 16px;
+  text-align: center;
+  color: #000;
+}
+.borderBottom{
+  border-bottom: 3px solid #2B59FF;
+  padding-top: 8px;
+  width: 70px;
+  margin: auto;
+}
+.starIconsWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carImg{
+  width: 60%;
+}
+.rateThisRide{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #696969;
+  margin-top: 2px;
+}
+.carStarWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+.checkIconWrapper{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.carInteriorWrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.checkIconDescription{
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: #696969;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-left: 10px;
+  width: 320px;
+}
+.carInteriorDescription{
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: #696969;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin-left: 10px;
+}
+.verticalBorder{
+  background-color:#EBEBEB;
+  height: 260px;
+  width: 2px;
+}
+.carSpecsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4rem ;
+}
+.carInteriorIcon{
+  width: 22px;
+}
+.journeyPriceCard{
+  background-color: #010101;
+  border-radius: 5px;
+  width: 237px;
+  height: 200px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .journeyPriceCard{
+  margin: auto;
+}
+}
+
+.yourJourneyPrice{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;  
+}
+.journeyTotalPrice{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  margin-top: 7px;
+}
+.bookRideButton{
+  border: 1px solid #696969;
+  filter: drop-shadow(-12px 12px 50px rgba(0, 0, 0, 0.3));
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 14px;
+  width: 100%;
+  margin-top: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5299999713897705px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1200px){
+  .carImg{
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width:991px){
+  .carSpecsContainer{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .verticalBorder{
+    display: none;
+  }
+  .checkIconDescription{
+    width: 420px;
+  }
+  .carImg{
+    width: 85%;
+    height: 240px;
+  }
+}
+@media only screen and (max-width:767px){
+
+  .checkIconDescription{
+    font-size: 15px;
+    width: 100%;
+  }
+  .carStarWrapper{
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .carImg{
+    width: 95%;
+    height: 220px;
+  }
+  .starIconsWrapper{
+    margin-top: 2rem;
+  }
+  .carName{
+    font-size: 40px;
+  }
+  .rateThisRide{
+    font-size: 14px;
+  }
+  .carInteriorDescription{
+    font-size: 14px;
+  }
+  .journeyTotalPrice{
+    font-size: 26px;
+  }
+  .bookRideButton{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .carImg{
+    width: 100%;
+    height: 180px;
+  }
+  .carName{
+    font-size: 36px;
+  }
+  .carStarWrapper{
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width:430px){
+  .carImg{
+    height: 145px;
+  }
+}
+
+@media only screen and (max-width:375px){
+  .carImg{
+    height: 130px;
+  }
+}

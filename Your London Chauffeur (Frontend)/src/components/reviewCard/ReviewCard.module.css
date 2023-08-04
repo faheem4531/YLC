@@ -1,0 +1,94 @@
+.reviewCard{
+  background-image: url("../../images/pngs/polygon-img.png");
+  width: 345px;
+  height: 370px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 40px;
+  position: relative;
+}
+.userRevewerContainer{
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  margin-top: -25px;
+}
+.reviewerImageWrapper{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.reviewerImage{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.reviewerName{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #010101;
+}
+.reviewerdomain{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #696969;
+}
+.userReview{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.16511458158493042px;
+  text-align: left;
+  color: #696969;
+}
+
+.reviewCardCon{
+  position: relative;
+
+}
+
+.starIcons{
+  width: 60%;
+  height: auto;
+  position: absolute;
+  bottom: -10px;
+  left: 27px;
+}
+
+@media only screen and (max-width:768px){
+  .reviewCard{
+    width: 340px;
+    height: 360px;
+    padding: 30px 30px;
+  }
+  .reviewerImage{
+    width: 50px;
+    height: 50px;
+  }
+  .starIcons{
+    margin-top: 1rem;
+  }
+  .reviewerName{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .reviewerdomain{
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

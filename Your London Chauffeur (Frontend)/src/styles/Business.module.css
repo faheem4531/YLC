@@ -1,0 +1,171 @@
+.Container {
+  min-height: 100vh;
+}
+ /* Section # 1 */
+ .heroSection{
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/pngs/business-hero-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 2rem 0;
+}
+.heroHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 15rem;
+}
+.heroParagraph{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 15rem;
+}
+ /* Section # 1 */
+
+/* Section # 2 */
+.safetySectionWrapper{
+  background-color: #F3F3F3;
+}
+.safetySection{
+  padding: 4rem 1rem;
+}
+.youDriverImg{
+  width: 100%;
+  height: 470px;
+}
+.yourSafetyHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1A1A1A;  
+}
+.yourSafetyPara{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#52575C;
+  margin-top:1.5rem;
+}
+.contactusBtnWrapper{
+  width: 270px;
+  margin-top: 2rem;
+}
+/* Section # 2 */
+
+/* Section # 3 */
+.propertySection{
+  padding: 4rem 1rem;
+  background-image: url("../images/pngs/property-tour-img.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+/* Section # 3 */
+
+/* Section # 4 */
+.choosUsCardsWrapper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+/* Section # 4 */
+
+@media only screen and (max-width:992px){
+  .youDriverImg{
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .heroHeading{
+    font-size: 60px;
+    line-height: 65px;
+    margin-top: 12rem;
+  }
+  .heroParagraph{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 12rem;
+  } 
+  .chooseUsHeading{
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .chooseUsSection{
+    padding: 4rem 1rem;
+  }
+  .yourSafetyHeading{
+    font-size: 42px;
+    line-height: 44px;
+  }
+  .yourSafetyPara{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .youDriverImg{
+    height: 500px;
+  }
+  .chooseUsParagraph{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .contactusBtnWrapper{
+    width: 200px;
+  }
+  .heroSection{
+    min-height: 80vh;
+  }
+}
+@media only screen and (max-width:500px){
+  .heroHeading{
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 10rem;
+  }
+  .heroParagraph{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .youDriverImg{
+    height: 400px;
+  }
+  .safetySection{
+    padding: 4rem 1rem;
+  }
+  .heroSection{
+    min-height: 60vh;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .youDriverImg{
+    height: 300px;
+  }
+}

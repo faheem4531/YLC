@@ -1,0 +1,63 @@
+.ourRidesWrapper{
+  background-color: #FFFFFF;
+  padding:60px 0px;
+}
+.ourRideHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+.borderBottom{
+  border-bottom: 3px solid #2B59FF;
+  padding-top:0.4rem;
+  margin: auto;
+  width: 60px;
+}
+.ourRidePara{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #696969;
+  width: 72%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width:992px){
+  .ourRidePara{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .ourRidePara{
+    width: 100%;
+    font-size: 15px;
+  }
+  .ourRideHeading{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45px;
+  }
+  .borderBottom{
+    padding-top:0.2rem;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .ourRidesWrapper{
+    padding:50px 0px;
+  }
+  .ourRidePara{
+    margin-bottom: 3rem;
+  }
+}
+

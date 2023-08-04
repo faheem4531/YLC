@@ -1,0 +1,148 @@
+.container{
+  padding:4rem 0 1rem 0 ;
+}
+.footerHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+  color: #1A1A1A;
+}
+.footerDescription{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+  color: #1A1A1A;
+}
+.footerInput{
+  background: rgba(225, 225, 225, 0.23);
+  backdrop-filter: blur(1.5px);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #1A1A1A;
+}
+.footerInput::placeholder{
+  color: #1A1A1A;
+}
+.socialIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+}
+.footerBorder{
+  border-bottom: 1px solid #0F0F0F;
+  margin-top: 2rem;
+}
+.footerCopyright{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #1A1A1A;
+  margin: 1.4rem 0;
+}
+.footerLogosWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.cardsWrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.squareCardWrapper{
+background-color: rgb(231, 231, 231);
+border-radius: 1px;
+margin-left: 2px;
+}
+.cardIcon{
+  width: 66px;
+  height: 38px;
+}
+
+.chauffeurLogo{
+  width: 250px;
+}
+.footerBtnWrapper{
+  width: 151px;
+  margin-top: 1.4rem;
+}
+
+@media only screen and (max-width:992px){
+  .footerHeading{
+    font-size: 27px;
+    margin-top: 2rem;
+    line-height: 32px;
+  }
+  .footerDescription{
+    font-size: 13px;
+  }
+  .footerInput{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 13px;
+    height: 55px;
+  }
+  .footerBtnWrapper{
+    width: 140px;
+  }
+  .socialIcon{
+    width: 17px;
+    height: 17px;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .chauffeurLogo{
+    width: 230px;
+  }
+  .footerCopyright{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .container{
+    padding:3rem 0 1rem 0 ;
+  }
+  .footerLogosWrapper{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+.cardsWrapper{
+  margin-top: 2rem;
+}
+}
+@media only screen and (max-width:350px){
+  .container{
+    padding:3rem 0 1rem 0 ;
+  }
+  .footerLogosWrapper{
+    display: flex;
+ flex-wrap: wrap;
+    margin-bottom: 0rem;
+  }
+
+}

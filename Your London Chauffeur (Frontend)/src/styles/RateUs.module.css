@@ -1,0 +1,62 @@
+/* Section # 2 */
+ .ourStorySection{
+   height: 100%;
+   padding: 12rem 1rem 5rem 1rem;
+   background-color: #000;
+ }
+ .ourStoryHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  }
+ .borderBottom{
+  border-bottom: 3px solid #2B59FF;
+  width: 60px;
+ }
+.starIconsWrapper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.buttonWrapper{
+  margin-top: 1rem;
+}
+/* Section # 2 */
+@media only screen and (max-width:992px){
+  .ourStorySection{
+   padding: 8rem 1rem 5rem 1rem;
+  }
+}
+@media only screen and (max-width:768px){
+  .chooseUsHeading{
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .chooseUsSection{
+    padding: 4rem 1rem;
+  }
+  .chooseUsParagraph{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+   .ourStoryHeading{
+    font-size: 42px;
+    line-height: 50px;
+  } 
+  .borderBottom{
+    width: 50px;
+  }  
+
+}
+@media only screen and (max-width:500px){
+   .ourStoryHeading{
+    font-size: 34px;
+    line-height: 44px;
+  } 
+
+}

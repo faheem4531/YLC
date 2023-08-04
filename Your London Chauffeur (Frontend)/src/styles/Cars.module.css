@@ -1,0 +1,377 @@
+.Container {
+  min-height: 100vh;
+}
+ /* Section # 1 */
+.heroSection{
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/pngs/cars-hero-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0 3rem 0;
+  z-index: 1;
+}
+.heroHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 9rem;
+}
+.heroMercedesPara{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 0.5rem;
+}
+.heroParagraph{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 4rem;
+}
+ /* Section # 1 */
+
+
+/* Section # 2 */
+ .ourRidesWrapper{
+  background-color: #FFFFFF;
+  padding:60px 0px;
+}
+.ourRideHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+.borderBottom{
+  border-bottom: 3px solid #2B59FF;
+  padding-top:0.4rem;
+  margin: auto;
+  width: 70px;
+}
+.ourRidePara{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #696969;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.carWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carImage{
+  width: 70%;
+  height: 250px;
+}
+.card{
+  width: 55%;
+}
+.eclassCarWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  margin-top: 6rem;
+}
+.verticalBorder{
+  width: 1px;
+  height: 220px;
+  background-color: #EBEBEB;
+}
+.checkIcon{
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+.checkIconWrapper{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.8rem;
+}
+.checkIconText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+  margin-left: 0.4rem;
+  width: 430px;
+}
+.dollarWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #EBEBEB;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.dollarWrapper:nth-child(3){
+  border-bottom: none;
+}
+.dollarText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+}
+.dollar{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #010101;
+}
+.bookRideButton{
+  border: none;
+  outline: none;
+  background: #010101;
+  box-shadow: -12px 12px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 230px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5299999713897705px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.buttonWrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.cardText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+  margin-left: 0.7rem;
+}
+.passengerIconWrapper{
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
+}
+.passengerIcon{
+  width: 20px;
+}
+/* Section # 2 */
+
+/* Section # 4 */
+.reviewSection{
+  background-color: #F3F3F3;
+  padding: 6rem 0;
+}
+.reviewCardWrapper{
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-behavior:smooth;
+  gap: 30px;
+  width: 100%;
+  margin-top: 4rem;
+}
+.reviewCardWrapper::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.arrowsWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  gap: 20px;
+  cursor: pointer;
+}
+.arrowIcon{
+  transform: rotate(180deg);
+}
+/* Section # 4 */
+
+
+@media only screen and (max-width:1200px){
+  .eclassCarWrapper{
+    gap: 20px;
+  }
+  .card{
+    width: 60%;
+    padding: 0px !important;
+  }
+  .checkIconText{
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .eclassCarWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3rem;
+    gap: 20px;
+  }
+  .verticalBorder{
+   display: none;
+  }
+  .carImage{
+    width: 100%;
+  }
+  .card{
+   width: 100%;
+   height: auto;
+   padding: 20px;
+}
+.heroHeading{
+  margin-top: 5rem;
+}
+
+}
+@media only screen and (max-width:767px){
+  .heroHeading{
+    font-size: 60px;
+    line-height: 65px;
+  }
+  .heroParagraph{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .ourRideHeading{
+    font-size: 44px;
+    line-height: 45px;
+  }
+  .ourRidePara{
+    font-size: 15px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .borderBottom{
+    padding-top:0.2rem;
+  }
+  .card{
+    width: 100%;
+  }
+  .checkIconText{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 100%;
+  }
+  .dollarText{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .dollar{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .ourRideHeading{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .reviewSection{
+    padding: 4rem 0;
+  }
+  .arrowsWrapper{
+    display: none;
+  }
+  .reviewCardWrapper{
+    gap: 10px;
+    margin-top: 3rem;
+  }
+  .eclassCarWrapper{
+    gap: 30px;
+  }
+}
+
+
+@media only screen and (max-width:500px){
+  .heroHeading{
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 4rem;
+  }
+  .heroParagraph{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 1rem;
+  }
+  .checkIconText{
+    font-size: 15px;
+  }
+  .dollarText{
+    font-size: 15px;
+  }
+  .dollar{
+    font-size: 14px;
+  }
+  .cardText{
+    font-size: 15px;
+  }
+  .carImage{
+    width: 100%;
+    height: 150px;
+  }
+  .ourRideHeading{
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .ourRidePara{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .bookRideButton{
+    width: 200px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .checkIcon{
+    width: 17px;
+    height: 17px;
+    margin-top: 2px;
+  }
+}

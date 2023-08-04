@@ -1,0 +1,77 @@
+.expertChauffeurContainer{
+  background-color: #fff;
+  padding: 5rem 0;
+}
+.expertChauffeurHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #010101;  
+}
+.expertChauffeurPara{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #25282B;
+  width: 80%;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+.borderBottom{
+  border-bottom: 3px solid #2B59FF;
+  width: 70px;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.chauffeurCardsContainer {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  margin-top: 3.5rem;
+}
+.chauffeurCardsContainer::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+@media only screen and (max-width:992px){
+  .expertChauffeurPara{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .expertChauffeurHeading{
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .expertChauffeurPara{
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width:390px){
+  .expertChauffeurHeading{
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .expertChauffeurPara{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 1rem;
+  }
+  .borderBottom{
+    margin-top: 0rem;
+  }
+  .expertChauffeurContainer{
+    background-color: #fff;
+    padding: 3rem 0;
+  }
+}

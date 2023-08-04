@@ -1,0 +1,159 @@
+.Container {
+  min-height: 100vh;
+}
+ /* Section # 1 */
+.heroSection{
+  background-color: #000;
+}
+.profileSection{
+  padding: 10rem 1rem 5rem 1rem;
+  height: 100%;
+}
+.userImage{
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+}
+.userName{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffff;
+}
+.emailWrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.userSideContainer{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.emailText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52575C;
+}
+.emailIcon{
+  width: 18px;
+  height: 18px;
+}
+.cardsWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ridesCard{
+  background: #0D0D0D;
+  border: 2px solid #323232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px;
+  width: 320px;
+  height: 144px;
+}
+.ridesCompleted{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffff;
+}
+.totalRides{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffff;
+}
+
+.loader {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ /* Section # 1 */
+
+ @media only screen and (max-width:1200px){
+
+  .ridesCompleted{
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .userName{
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .totalRides{
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .emailText{
+    font-size: 15px;
+  }
+ }
+
+ @media only screen and (max-width:992px){
+  .cardsWrapper{
+    margin-top: 2.5rem;
+  }
+  .cardsWrapper{
+    justify-content: flex-start;
+  }
+ }
+
+ @media only screen and (max-width:768px){
+  .ridesCompleted{
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .totalRides{
+    font-size: 26px;
+    line-height: 50px;
+  }
+  .userName{
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .emailText{
+    font-size: 14px;
+  }
+ }
+ @media only screen and (max-width:520px){
+  .cardsWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.6rem;
+  }
+  .userSideContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ridesCard{
+    width: 100%;
+    height: 115px;
+  }
+  .userName{
+  margin-top: -0.5rem;
+  }
+ }

@@ -1,0 +1,495 @@
+.ourRidesWrapper{
+  background-color: #FFFFFF;
+  padding:60px 0px;
+  position: relative;
+  z-index: 0;
+}
+.ourRideHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+.borderBottom{
+  border-bottom: 3px solid #2B59FF;
+  padding-top:0.4rem;
+  margin: auto;
+  width: 70px;
+}
+.ourRidePara{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #696969;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.carWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carImage{
+  width: 70%;
+  height: auto;
+}
+.card{
+  width: 55%;
+}
+.eclassCarWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+.verticalBorder{
+  width: 1px;
+  height: 220px;
+  background-color: #EBEBEB;
+}
+.checkIcon{
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+.checkIconWrapper{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.8rem;
+}
+.checkIconText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+  margin-left: 0.4rem;
+  width: 430px;
+}
+.dollarWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #EBEBEB;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.dollarWrapper:nth-child(3){
+  border-bottom: none;
+}
+.dollarText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+}
+.dollar{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #010101;
+}
+.bookRideButton{
+  border: none;
+  outline: none;
+  background: #010101;
+  box-shadow: -12px 12px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 230px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5299999713897705px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.bookRideButton:active{
+  transform: scale(0.99);
+}
+.buttonWrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.cardText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+  margin-left: 0.7rem;
+}
+.passengerIconWrapper{
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
+}
+.passengerIcon{
+  width: 20px;
+}
+@media only screen and (max-width:1200px){
+  .eclassCarWrapper{
+    gap: 20px;
+  }
+  .card{
+    width: 60%;
+    padding: 0px !important;
+  }
+  .checkIconText{
+    width: 330px;
+  }
+}
+@media only screen and (max-width:992px){
+  .eclassCarWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3rem;
+    gap: 20px;
+  }
+  .verticalBorder{
+   display: none;
+  }
+  .carImage{
+    width: 100%;
+  }
+  .card{
+   width: 100%;
+   height: auto;
+   padding: 20px;
+}
+}
+@media only screen and (max-width:767px){
+  .heroHeading{
+    font-size: 60px;
+    line-height: 65px;
+    margin-top: 7rem;
+  }
+  .heroParagraph{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .ourRideHeading{
+    font-size: 44px;
+    line-height: 45px;
+  }
+  .ourRidePara{
+    font-size: 15px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .borderBottom{
+    padding-top:0.2rem;
+  }
+  .card{
+    width: 100%;
+  }
+  .checkIconText{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 100%;
+  }
+  .dollarText{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .dollar{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .ourRideHeading{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .reviewSection{
+    padding: 4rem 0;
+  }
+  .arrowsWrapper{
+    display: none;
+  }
+  .reviewCardWrapper{
+    gap: 10px;
+    margin-top: 3rem;
+  }
+  .eclassCarWrapper{
+    gap: 30px;
+  }
+}
+@media only screen and (max-width:500px){
+  .heroHeading{
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 4rem;
+  }
+  .heroParagraph{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 1rem;
+  }
+  .checkIconText{
+    font-size: 15px;
+  }
+  .dollarText{
+    font-size: 15px;
+  }
+  .dollar{
+    font-size: 14px;
+  }
+  .cardText{
+    font-size: 15px;
+  }
+  .carImage{
+    width: 100%;
+  }
+  .ourRideHeading{
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .ourRidePara{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .bookRideButton{
+    width: 200px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .checkIcon{
+    width: 17px;
+    height: 17px;
+    margin-top: 2px;
+  }
+}
+
+/* Slider */
+.previousButton .previousIconContainer, .nextButton .nextIconContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #1C1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 350px;
+  position: absolute;
+}
+.previousButton .previousIcon {
+  background-image: url('../../images/svgs/previous-icon.svg');
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-size: contain;
+}
+.nextButton .nextIcon {
+  background-image: url('../../images/svgs/next-icon.svg');
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-size: contain;
+
+}
+.carouselIndicator {
+  background-color: #010101 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+.mercedesPricingWrapper{
+  width: 60%;
+  margin: auto;
+}
+.carPriceRatingWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  }
+  .carName{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  }
+.carHourlyRate{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+}
+.carPrice{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #010101;
+}
+.buttonWarpper{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.sliderButton{
+  border: none;
+  outline: none;
+  background: #010101;
+  box-shadow: 12px 0px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width:275px;
+  height:50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5299999713897705px;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (max-width:992px){
+  .carouselImage{
+    width: 55%;
+  }
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 240px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .carName{
+    font-size: 28px;
+    line-height: 32px;
+    }
+  .carHourlyRate{
+    font-size: 15px;
+    line-height: 22px;
+    }  
+  .carPrice{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    } 
+  .sliderButton{
+    width:250px;
+    height:45px;
+    font-size: 14px;
+    } 
+  .buttonWarpper{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    } 
+    .carouselImage{
+      width:60%;
+    }
+    .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+      top: 220px;
+    }
+}
+@media only screen and (max-width:460px){
+  .carName{
+    font-size: 24px;
+    line-height: 30px;
+    }
+  .carHourlyRate{
+    font-size: 13px;
+    line-height: 18px;
+    }  
+  .carPrice{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    } 
+  .sliderButton{
+    width:200px;
+    height:42px;
+    font-size: 12px;
+    } 
+  .buttonWarpper{
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+    }
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    width: 35px;
+    height: 35px;
+    }
+  .previousButton .previousIcon {
+    width: 16px;
+    height: 16px;
+    }
+  .nextButton .nextIcon {
+    width: 16px;
+    height: 16px;    
+    }  
+    .carouselImage{
+      width:65%;
+    }
+}
+@media only screen and (max-width:400px){
+  .mercedesPricingWrapper{
+    width: 80%;
+  }
+  .carName{
+    text-align: center;
+  }
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 240px;
+  }
+  .sliderButton{
+    width:160px;
+    height:38px;
+  } 
+  .ourRideHeading{
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .ourRidePara{
+    font-size: 13px;
+  }
+}
+/* Slider */

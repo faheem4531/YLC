@@ -1,0 +1,199 @@
+.previousButton .previousIconContainer, .nextButton .nextIconContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #1C1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 80px;
+  position: absolute;
+}
+.previousButton .previousIcon {
+  background-image: url('../../images/svgs/previous-icon.svg');
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-size: contain;
+}
+.nextButton .nextIcon {
+  background-image: url('../../images/svgs/next-icon.svg');
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-size: contain;
+
+}
+.carouselIndicator {
+  background-color: #010101 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+
+.imageWrappeer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselImage{
+  width: 45%;
+  height: auto;
+}
+.mercedesPricingWrapper{
+  width: 60%;
+  margin: auto;
+}
+.carPriceRatingWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  }
+  .carName{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  }
+.carHourlyRate{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #696969;
+}
+.carPrice{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #010101;
+}
+.buttonWarpper{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.sliderButton{
+  border: none;
+  outline: none;
+  background: #010101;
+  box-shadow: 12px 0px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width:275px;
+  height:50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5299999713897705px;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (max-width:992px){
+  .carouselImage{
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .carName{
+    font-size: 28px;
+    line-height: 32px;
+    }
+  .carHourlyRate{
+    font-size: 15px;
+    line-height: 22px;
+    }  
+  .carPrice{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    } 
+  .sliderButton{
+    width:250px;
+    height:45px;
+    font-size: 14px;
+    } 
+  .buttonWarpper{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    } 
+    .carouselImage{
+      width:60%;
+    }
+}
+
+@media only screen and (max-width:460px){
+  .carName{
+    font-size: 24px;
+    line-height: 30px;
+    }
+  .carHourlyRate{
+    font-size: 13px;
+    line-height: 18px;
+    }  
+  .carPrice{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    } 
+  .sliderButton{
+    width:200px;
+    height:42px;
+    font-size: 12px;
+    } 
+  .buttonWarpper{
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+    }
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    width: 35px;
+    height: 35px;
+    top: 120px;
+    }
+  .previousButton .previousIcon {
+    width: 16px;
+    height: 16px;
+    }
+  .nextButton .nextIcon {
+    width: 16px;
+    height: 16px;    
+    }  
+    .carouselImage{
+      width:80%;
+    }
+}
+@media only screen and (max-width:400px){
+  .mercedesPricingWrapper{
+    width: 80%;
+  }
+  .carName{
+    text-align: center;
+  }
+  .previousButton .previousIconContainer, .nextButton .nextIconContainer {
+    top: 100px;
+  }
+  .sliderButton{
+    width:160px;
+    height:38px;
+  } 
+}
+
