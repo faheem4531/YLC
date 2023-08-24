@@ -1,0 +1,169 @@
+.Container {
+  min-height: 100vh;
+}
+ /* Section # 1 */
+ .heroSection{
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+
+.HeroImg{
+  height: 680px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+}
+
+.heroSection{ 
+  background: rgba(0, 0, 0, 0.60);
+  height: 680px;
+  width: 100%;
+}
+
+.heroHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 15rem;
+}
+.heroParagraph{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 1.5rem;
+  width: 60%;
+  margin-bottom: 15rem;
+}
+ /* Section # 1 */
+
+ /* Section # 2 */
+.yourSafetySectionWrapper{
+  background-color: #F3F3F3;
+}
+.safetySection{
+  padding: 4rem 1rem;
+}
+.youDriverImg{
+  width: 100%;
+  height: 470px;
+}
+.yourSafetyHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1A1A1A;  
+}
+.yourSafetyPara{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#52575C;
+  margin-top:1.5rem;
+}
+
+.contactusBtnWrapper{
+  width: 270px;
+  margin-top: 2rem;
+}
+/* Section # 2 */
+@media only screen and (max-width:992px){
+
+   .heroParagraph{
+    width: 100%;
+  } 
+
+    .youDriverImg{
+    height: 600px;
+  }
+ 
+}
+
+
+@media only screen and (max-width:768px){
+  .heroHeading{
+    font-size: 60px;
+    line-height: 65px;
+    margin-top: 13rem;
+  }
+  .heroParagraph{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+  }
+    .youDriverImg{
+    height: 500px;
+  }
+ 
+    .yourSafetyHeading{
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  .yourSafetyPara{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .heroSection{ 
+  height: 600px;
+}
+
+.HeroImg{
+  height: 600px;
+}
+
+  .contactusBtnWrapper{
+    width: 200px;
+  }
+
+}
+@media only screen and (max-width:500px){
+  .heroHeading{
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 9rem;
+  }
+  .heroParagraph{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+  .youDriverImg{
+    height: 400px;
+  }
+
+  .heroSection{ 
+  height: 450px;
+  }
+
+.HeroImg{
+  height: 450px;
+}
+}
+
+@media only screen and (max-width:400px){
+  .youDriverImg{
+    height: 300px;
+  }
+}
