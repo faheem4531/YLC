@@ -45,7 +45,7 @@ const PropertyToursSlider = () => {
                 WiFi, chargers for your smartphones and tablets as well as
                 complimentary water bottles for every journey with us.
               </div>
-              <Link href="/book-now">
+              <Link href="/book-chauffeur-now">
                 <div
                   data-aos="fade-up"
                   data-aos-duration="500"
@@ -76,7 +76,7 @@ const PropertyToursSlider = () => {
                 roadshow runs smoothly around the City of London and Central
                 London.
               </div>
-              <Link href="/book-now">
+              <Link href="/book-chauffeur-now">
                 <div
                   data-aos="fade-up"
                   data-aos-duration="500"

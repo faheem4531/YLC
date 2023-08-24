@@ -1,21 +1,32 @@
 import styles from "./ImageTextOverlay.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
-const ImageTextOverlay = ({backgroundImage,heading,description} : {backgroundImage:any, heading: string, description:string}) => {
+const ImageTextOverlay = ({
+  backgroundImage,
+  heading,
+  description,
+  linkPath,
+}: {
+  backgroundImage: any;
+  heading: string;
+  description: string;
+  linkPath: string;
+}) => {
   return (
     <div className={styles.imageContainer}>
-    <Image
-      src={backgroundImage}
-      className={styles.carouselImage}
-      alt="any"
-    />
-    <div className={styles.textContainer}>
-      <div className={styles.imageHeading}>{heading}</div>
-      <div className={styles.imegeDescription}>
-        {description}
-      </div>
+      <Link href={linkPath}>
+        <Image
+          src={backgroundImage}
+          className={styles.carouselImage}
+          alt="any"
+        />
+        <div className={styles.textContainer}>
+          <div className={styles.imageHeading}>{heading}</div>
+          <div className={styles.imegeDescription}>{description}</div>
+        </div>
+      </Link>
     </div>
-  </div>
   );
 };
 

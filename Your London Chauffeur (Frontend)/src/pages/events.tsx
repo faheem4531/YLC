@@ -8,7 +8,7 @@ import EventSlider from "@/components/eventSlider";
 
 import Image from "next/image";
 import eventTeamImg from "../images/pngs/event-team-img.png";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Event = () => {
   return (
@@ -37,38 +37,41 @@ const Event = () => {
         </div>
       </div> */}
       <div className={styles.heroSection}>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6">
-                <div
-                  data-aos="fade-right"
-                  data-aos-duration="500"
-                  data-aos-once="false"
-                  className={styles.heroHeading}>
-                  Chauffeur For Events
-                </div>
-                <div
-                  data-aos="fade-right"
-                  data-aos-duration="500"
-                  data-aos-once="false"
-                  className={styles.heroParagraph}>
-                  Setting the standard for exceptional service and sustainability.
-                </div>
-              </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
               <div
-                data-aos="fade-left"
+                data-aos="fade-right"
                 data-aos-duration="500"
                 data-aos-once="false"
-                className="col-lg-6 d-flex justify-content-center">
-                <HeroSectionForm />
+                className={styles.heroHeading}
+              >
+                Chauffeur For Events
               </div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-once="false"
+                className={styles.heroParagraph}
+              >
+                Setting the standard for exceptional service and sustainability.
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-once="false"
+              className="col-lg-6 d-flex justify-content-center"
+            >
+              <HeroSectionForm />
             </div>
           </div>
         </div>
+      </div>
       {/* Section # 1 */}
 
       {/* Section # 2 */}
-      <div className={styles.eventTeamWrapper}>
+      {/* <div className={styles.eventTeamWrapper}>
       <div className={`${styles.safetySection} container`}>
         <div className="row d-flex align-items-center g-5">
           <div
@@ -165,7 +168,7 @@ const Event = () => {
           </div>
         </div>
       </div>
-      </div>
+      </div> */}
       {/* Section # 2 */}
 
       {/* Section # 3 */}

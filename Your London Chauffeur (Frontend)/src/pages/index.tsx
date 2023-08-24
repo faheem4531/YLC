@@ -6,13 +6,53 @@ import ExpertChauffeurSection from "@/components/expertChauffeurSection";
 import GenericButton from "@/components/genericButton";
 
 import Image from "next/image";
-import limoImage from "../images/jpgs/airport-Limo-img4.png"; 
+import limoImage from "../images/jpgs/airport-Limo-img4.png";
 import ourMissionImage from "../images/jpgs/our-mission-img.jpg";
 import Link from "next/link";
+import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 const Home = () => {
   return (
     <div>
+      <Head>
+        <title>London Chauffeur Service | Your London Chauffeur</title>
+        {/* Open Grapg tags  */}
+        <meta
+          property="og:title"
+          content="London Chauffeur Service | Your London Chauffeur"
+        />
+        <meta
+          property="og:description"
+          content="Experience the finest London chauffeur service with Your London Chauffeur. Hire a private chauffeur for luxury transfers and professional chauffeur services near you."
+        />
+        <meta
+          property="og:image"
+          content="https://yourlondonchauffeur.co.uk/images/og-image.jpg"
+        />
+        <meta property="og:url" content="https://yourlondonchauffeur.co.uk/" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://yourlondonchauffeur.co.uk/" />
+        <NextSeo
+          title="London Chauffeur Service | Your London Chauffeur"
+          description="Experience the finest London chauffeur service with Your London Chauffeur. Hire a private chauffeur for luxury transfers and professional chauffeur services near you."
+          canonical="https://yourlondonchauffeur.co.uk/"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Your London Chauffeur",
+            "url": "https://yourlondonchauffeur.co.uk/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+      </Head>
       <div className={styles.Container}>
         {/* Section # 1 */}
         <div className={styles.heroSection}>
@@ -74,8 +114,12 @@ const Home = () => {
                   className={styles.whoWeAreHeading}
                   data-aos="fade-left"
                   data-aos-duration="500"
-                  data-aos-once="false">
+                  data-aos-once="false"
+                >
                   Luxurious journeys from those who know London best
+                  <h1
+                    className={`d-inline ${styles.whoWeAreHeading}`}
+                  > - London Chauffeur Service</h1>
                 </div>
                 <div
                   className={styles.whoWeArePara}
@@ -115,28 +159,14 @@ const Home = () => {
           <div className={`${styles.ourMissionWrapper} container`}>
             <div className="row d-flex align-items-center g-5">
               <div className="col-lg-6">
-                {/* <div
-                  data-aos="fade-left"
-                  data-aos-duration="500"
-                  data-aos-once="false"
-                  className={styles.ourMission}>
-                  Our Mission
-                </div>
-                <div
-                  data-aos="fade-left"
-                  data-aos-duration="500"
-                  data-aos-once="false"
-                  className={styles.ourMissionHeading}>
-                  We are Professional Chauffeur
-                </div> */}
                 <div
                   data-aos="fade-left"
                   data-aos-duration="500"
                   data-aos-once="false"
                   className={styles.ourMissionPara}>
-                  We started our chauffeur service with a simple idea: to provide 
-                  reliable, luxurious transportation from those who know London 
-                  best. Since then, we have had: 
+                  We started our chauffeur service with a simple idea: to
+                  provide reliable, luxurious transportation from those who know
+                  London best. Since then, we have had:
                 </div>
                 <div className="row mb-3 mb-lg-0">
                   <div
@@ -163,29 +193,9 @@ const Home = () => {
                     <div className={styles.ourTraget}>300</div>
                     <div className={styles.ourRides}>
                       Satisfied Partners & Clients
-                    </div>                   
-                  </div>
-                </div>
-                {/* <div className="row">
-                  <div
-                    data-aos="fade-left"
-                    data-aos-duration="500"
-                    data-aos-once="false"
-                    className="col-10 d-flex flex-column align-items-center">
-                    <div className={styles.ourTraget}>300</div>
-                    <div className={styles.ourRides}>
-                      Satisfied Partners & Clients
                     </div>
                   </div>
-                  <div
-                    data-aos="fade-left"
-                    data-aos-duration="500"
-                    data-aos-once="false"
-                    className="col-6">
-                    <div className={styles.ourTraget}>33</div>
-                    <div className={styles.ourRides}>Company`s Offices</div>
-                  </div>
-                </div> */}
+                </div>
               </div>
               <div
                 data-aos="fade-up"
@@ -201,15 +211,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* Section # 4 */}
 
-        {/* Section # 5 */}
-        {/* <ExpertChauffeurSection /> */}
-        {/* Section # 5 */}
-
-        {/* Section # 6 */}
         <GetAQuoteCard />
-        {/* Section # 6 */}
       </div>
     </div>
   );

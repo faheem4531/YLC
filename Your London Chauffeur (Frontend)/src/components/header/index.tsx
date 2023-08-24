@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import HeaderIcon from "../../images/svgs/header-crown-icon.svg";
-import { signOut, useSession } from 'next-auth/react';
+import { signOut, useSession } from "next-auth/react";
 import profileIcon from "../../images/svgs/profile-icon.svg";
 import HeaderWhiteIcon from "../../images/svgs/header-crown-white-icon.svg";
 
@@ -47,7 +47,7 @@ const Header = ({ currentPath }: { currentPath: string }) => {
   const logout = () => {
     localStorage.clear();
     setToken(null);
-    if (status === 'authenticated') {
+    if (status === "authenticated") {
       signOut();
     }
   };
@@ -59,13 +59,15 @@ const Header = ({ currentPath }: { currentPath: string }) => {
           <div className="col-12">
             <div className={styles.nav}>
               <input type="checkbox" id={styles.nevCheck} ref={sidebarRef} />
-              <Link data-aos="fade-down"
-                  data-aos-duration="500"
-                  data-aos-once="false" href="/">
+              <Link
+                data-aos="fade-down"
+                data-aos-duration="500"
+                data-aos-once="false"
+                href="/">
                 <Image
                   className={styles.crownIcon}
                   src={HeaderWhiteIcon}
-                  alt="icon"
+                  alt="London Chauffeur Service"
                 />
               </Link>
               <div className={styles.navBtn}>
@@ -77,72 +79,75 @@ const Header = ({ currentPath }: { currentPath: string }) => {
               </div>
               <div className={styles.navLinks}>
                 <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-once="false"
                   onClick={closeSidebar}
                   className={getBorder("/")}
                   href="/">
                   Home
                 </Link>
                 <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-once="false"
                   onClick={closeSidebar}
                   className={getBorder("/about-us")}
-                  href="about-us">
+                  href="/about-us">
                   About Us
                 </Link>
                 <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-once="false"
                   onClick={closeSidebar}
-                  className={getBorder("/cars")}
-                  href="cars">
+                  className={getBorder("/chauffeur-cars")}
+                  href="/chauffeur-cars">
                   Cars
                 </Link>
                 <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-once="false"
                   onClick={closeSidebar}
-                  className={getBorder("/airports")}
-                  href="airports">
+                  className={getBorder("/airports-tranfers")}
+                  href="/airports-tranfers">
                   Airport Transfers
                 </Link>
                 <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-once="false"
                   onClick={closeSidebar}
-                  className={getBorder("/business")}
-                  href="business">
+                  className={getBorder("/business-chauffeur")}
+                  href="/business-chauffeur">
                   Business
                 </Link>
                 <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-once="false"
                   onClick={closeSidebar}
-                  className={getBorder("/events")}
-                  href="events">
+                  className={getBorder("/events-chauffeur")}
+                  href="/events-chauffeur">
                   Events
                 </Link>
                 <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-once="false"
                   onClick={closeSidebar}
-                  className={getBorder("/book-now")}
-                  href="book-now">
+                  className={getBorder("/book-chauffeur-now")}
+                  href="/book-chauffeur-now">
                   Book Now
                 </Link>
                 {token ? (
-                  <Link data-aos="fade-down"
-                  data-aos-duration="500"
-                  data-aos-once="false" className={getBorder("/profile")} href="profile">
+                  <Link
+                    data-aos="fade-down"
+                    data-aos-duration="500"
+                    data-aos-once="false"
+                    className={getBorder("/profile")}
+                    href="/profile">
                     <Image
                       className={styles.profileIcon}
                       src={profileIcon}
@@ -151,27 +156,29 @@ const Header = ({ currentPath }: { currentPath: string }) => {
                   </Link>
                 ) : (
                   <Link
-                  data-aos="fade-down"
-                  data-aos-duration="500"
-                  data-aos-once="false"
+                    data-aos="fade-down"
+                    data-aos-duration="500"
+                    data-aos-once="false"
                     onClick={closeSidebar}
                     className={getBorder("/sign-in")}
-                    href="sign-in">
+                    href="/sign-in">
                     Login
                   </Link>
                 )}
-                {token ? <Link
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-once="false"
-                  onClick={() => {
-                    closeSidebar();
-                    logout();
-                  }}
-                  className={getBorder("")}
-                  href="/">
-                  Logout
-                </Link> : null}
+                {token ? (
+                  <Link
+                    data-aos="fade-down"
+                    data-aos-duration="500"
+                    data-aos-once="false"
+                    onClick={() => {
+                      closeSidebar();
+                      logout();
+                    }}
+                    className={getBorder("")}
+                    href="/">
+                    Logout
+                  </Link>
+                ) : null}
               </div>
             </div>
           </div>

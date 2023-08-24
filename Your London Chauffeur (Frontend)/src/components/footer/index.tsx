@@ -86,7 +86,7 @@ const Footer = () => {
               className={styles.footerHeading}>
               Our Cars
             </div>
-            <Link href="/cars">
+            <Link href="/chauffeur-cars">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -95,7 +95,7 @@ const Footer = () => {
                 Mercedes S-Class
               </div>
             </Link>
-            <Link href="/cars">
+            <Link href="/chauffeur-cars">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -104,7 +104,7 @@ const Footer = () => {
                 Mercedes V-Class & EQV
               </div>
             </Link>
-            <Link href="/cars">
+            <Link href="/chauffeur-cars">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -113,21 +113,6 @@ const Footer = () => {
                 Mercedes E-Class
               </div>
             </Link>
-
-            {/* <Link href="/cars">
-              <div className={styles.footerDescription}>Range Rover Hybrid</div>
-            </Link> */}
-            {/* <Link href="/cars">
-              <div className={styles.footerDescription}>BMW i7</div>
-            </Link>
-            <Link href="/cars">
-              <div className={styles.footerDescription}>Bentley Mulsanne</div>
-            </Link>
-            <Link href="/cars">
-              <div className={styles.footerDescription}>
-                Rolls-Royce Phantom
-              </div>
-            </Link> */}
           </div>
           <div className="col-md-2 col-sm-6">
             <div
@@ -155,7 +140,7 @@ const Footer = () => {
                 One way
               </div>
             </Link>
-            <Link href="/airports">
+            <Link href="/airports-tranfers">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -164,7 +149,7 @@ const Footer = () => {
                 Airport
               </div>
             </Link>
-            <Link href="/business">
+            <Link href="/business-chauffeur">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -173,7 +158,7 @@ const Footer = () => {
                 Business
               </div>
             </Link>
-            <Link href="/events">
+            <Link href="/events-chauffeur">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -182,7 +167,7 @@ const Footer = () => {
                 Events
               </div>
             </Link>
-            <Link href="/business">
+            <Link href="/business-chauffeur">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -191,7 +176,7 @@ const Footer = () => {
                 Tours
               </div>
             </Link>
-            <Link href="/events">
+            <Link href="/events-chauffeur">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -218,7 +203,7 @@ const Footer = () => {
                 Home
               </div>
             </Link>
-            <Link href="/cars">
+            <Link href="/chauffeur-cars">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -227,7 +212,7 @@ const Footer = () => {
                 Cars
               </div>
             </Link>
-            <Link href="/airports">
+            <Link href="/airports-tranfers">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -236,7 +221,7 @@ const Footer = () => {
                 Airport Transfers
               </div>
             </Link>
-            <Link href="/business">
+            <Link href="/business-chauffeur">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -245,7 +230,7 @@ const Footer = () => {
                 Business
               </div>
             </Link>
-            <Link href="/events">
+            <Link href="/events-chauffeur">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -263,7 +248,7 @@ const Footer = () => {
                 About Us
               </div>
             </Link>
-            <Link href="/cars">
+            <Link href="/chauffeur-cars">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -272,7 +257,7 @@ const Footer = () => {
                 Prices
               </div>
             </Link>
-            <Link href="/book-now">
+            <Link href="/book-chauffeur-now">
               <div
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -312,21 +297,16 @@ const Footer = () => {
                 loading={loading}
               />
             </div>
-            <div>
-              {/* <Link href="#">
-                <Image
-                  className={styles.socialIcon}
-                  src={facebookIcon}
-                  alt="icon"
-                />
-              </Link> */}
-              {/* <Link href="#">
-                <Image
-                  className={styles.socialIcon}
-                  src={twitterIcon}
-                  alt="icon"
-                />
-              </Link> */}
+            <div className='mt-3'>
+              <Link href="/terms-and-conditions">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-once="false"
+                  className={styles.footerDescription}>
+                  Terms and Conditions
+                </div>
+              </Link>
               <Link
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -351,14 +331,15 @@ const Footer = () => {
                   alt="icon"
                 />
               </Link>
+
             </div>
           </div>
-      </div>
         </div>
-        <div className={styles.footerBorder}/>
-            <div className={styles.footerCopyright}>
-              Copyright © 2023 Your London Chauffeur. All rights reserved.
-            </div>
+      </div>
+      <div className={styles.footerBorder} />
+      <div className={styles.footerCopyright}>
+        Copyright © 2023 Your London Chauffeur. All rights reserved.
+      </div>
     </div>
   );
 };

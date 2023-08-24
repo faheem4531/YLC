@@ -65,6 +65,7 @@ const BookNowDetail = () => {
           undefined,
           { shallow: true });
         setLoading(false)
+        router.push("/thank-you")
       } catch (err) {
         setLoading(false)
         toast("Booking failed", { type: "error" })

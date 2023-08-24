@@ -129,12 +129,7 @@ const Profile = () => {
                     {ridesCompleted?.length}
                   </div>
                 </div>
-                {/* <div className={styles.ridesCard}>
-                  <div className={styles.ridesCompleted}>Total Spent</div>
-                  <div className={styles.totalRides}>
-                    $<span>5,087</span>
-                  </div>
-                </div> */}
+
               </div>
             </div>
           </div>

@@ -32,26 +32,31 @@ const Airports = () => {
                 data-aos="fade-right"
                 data-aos-duration="500"
                 data-aos-once="false"
-                className={styles.heroHeading}>
+                className={styles.heroHeading}
+              >
                 Airport Transfers
               </div>
               <div
                 data-aos="fade-right"
                 data-aos-duration="500"
                 data-aos-once="false"
-                className={styles.heroParagraph}>
-                Booking an Airport Transfer with Your London Chauffeur is a great option for those who need 
-                to go to and from the Airport in a stress-free, comfortable, and relaxing manner. As always, our 
-                chauffeurs will be holding your nameboard and help with any luggage you may have. With your 
-                flight tracked by our team based in London, you can always rely on our chauffeurs to arrive on 
-                time, every time. 
+                className={styles.heroParagraph}
+              >
+                Booking an Airport Transfer with Your London Chauffeur is a
+                great option for those who need to go to and from the Airport in
+                a stress-free, comfortable, and relaxing manner. As always, our
+                chauffeurs will be holding your nameboard and help with any
+                luggage you may have. With your flight tracked by our team based
+                in London, you can always rely on our chauffeurs to arrive on
+                time, every time.
               </div>
             </div>
             <div
               data-aos="fade-left"
               data-aos-duration="500"
               data-aos-once="false"
-              className="col-lg-6 d-flex justify-content-center">
+              className="col-lg-6 d-flex justify-content-center"
+            >
               <HeroSectionForm />
             </div>
           </div>
@@ -61,47 +66,54 @@ const Airports = () => {
 
       {/* Section # 2 */}
       <div className={styles.yourSafetySectionWrapper}>
-      <div className={`${styles.safetySection} container`}>
-        <div className="row d-flex align-items-center g-5">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-once="false"
-            className="col-lg-6">
-            <Image className={styles.youDriverImg} src={yourDriver} alt="img" />
-          </div>
-          <div className="col-lg-6">
+        <div className={`${styles.safetySection} container`}>
+          <div className="row d-flex align-items-center g-5">
             <div
-              data-aos="fade-left"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="false"
-              className={styles.yourSafetyHeading}>
-              Meet and Greet
+              className="col-lg-6"
+            >
+              <Image
+                className={styles.youDriverImg}
+                src={yourDriver}
+                alt="img"
+              />
             </div>
-            <div
-              data-aos="fade-left"
-              data-aos-duration="500"
-              data-aos-once="false"
-              className={styles.yourSafetyPara}>
-              You will be met by one of our uniformed professional 
-chauffeurs who will be waiting to welcome you and 
-holding your nameboard when you step out of the 
-arrival’s hall. You can expect us to be always discreet. If 
-you prefer, we can arrange a meeting point and phone or 
-text you when you are in the baggage hall. 
-            </div>
-            <Link href="/contact-us">
+            <div className="col-lg-6">
               <div
-                data-aos="fade-up"
+                data-aos="fade-left"
                 data-aos-duration="500"
                 data-aos-once="false"
-                className={styles.contactusBtnWrapper}>
-                <GenericButton title="Contact Us" />
+                className={styles.yourSafetyHeading}
+              >
+                Meet and Greet
               </div>
-            </Link>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-once="false"
+                className={styles.yourSafetyPara}
+              >
+                You will be met by one of our uniformed professional chauffeurs
+                who will be waiting to welcome you and holding your nameboard
+                when you step out of the arrival’s hall. You can expect us to be
+                always discreet. If you prefer, we can arrange a meeting point
+                and phone or text you when you are in the baggage hall.
+              </div>
+              <Link href="/contact-us">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-once="false"
+                  className={styles.contactusBtnWrapper}
+                >
+                  <GenericButton title="Contact Us" />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       {/* Section # 2 */}
 
@@ -116,86 +128,91 @@ text you when you are in the baggage hall.
 
       {/* Section # 4*/}
       <div className={styles.yourSafetySectionWrapper}>
-      <div className={`${styles.chooseUsSection} container`}>
-        <div className="row">
-          <div className="col-12">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-once="false"
-              className={styles.chooseUsHeading}>
-              Wy Choose Us Over Others?
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-once="false"
-              className={styles.borderBottom}
-            />
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-once="false"
-              className={styles.chooseUsParagraph}>
-              ​We provide a meet and greet service on all arrivals. It includes
-              the following:
-            </div>
-            <div className="row">
-              <div className="col-lg-12 d-flex justify-content-center flex-wrap">
-              <div className="me-lg-5">
-                <div
-                  data-aos="fade-right"
-                  data-aos-duration="500"
-                  data-aos-once="false">
-                  <ChooseUsCard
-                    activeIcon={flightActiveIcon}
-                    inActiveIcon={flightInactiveIcon}
-                    heading="Flight Tracking"
-                    description="Each booking has the relevant flight tracked to ensure you do not have any extra waiting or parking charges caused by delayed flights"
-                  />
-                </div>
-                <div
-                  data-aos="fade-right"
-                  data-aos-duration="500"
-                  data-aos-once="false">
-                  <ChooseUsCard
-                    activeIcon={assistanceActiveIcon}
-                    inActiveIcon={assistanceInactiveIcon}
-                    heading="Assistance"
-                    description="We welcome you on your arrival and provide assistance with your language"
-                  />
+        <div className={`${styles.chooseUsSection} container`}>
+          <div className="row">
+            <div className="col-12">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="false"
+                className={styles.chooseUsHeading}
+              >
+                Wy Choose Us Over Others?
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="false"
+                className={styles.borderBottom}
+              />
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="false"
+                className={styles.chooseUsParagraph}
+              >
+                ​We provide a meet and greet service on all arrivals. It
+                includes the following:
+              </div>
+              <div className="row">
+                <div className="col-lg-12 d-flex justify-content-center flex-wrap">
+                  <div className="me-lg-5">
+                    <div
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-once="false"
+                    >
+                      <ChooseUsCard
+                        activeIcon={flightActiveIcon}
+                        inActiveIcon={flightInactiveIcon}
+                        heading="Flight Tracking"
+                        description="Each booking has the relevant flight tracked to ensure you do not have any extra waiting or parking charges caused by delayed flights"
+                      />
+                    </div>
+                    <div
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-once="false"
+                    >
+                      <ChooseUsCard
+                        activeIcon={assistanceActiveIcon}
+                        inActiveIcon={assistanceInactiveIcon}
+                        heading="Assistance"
+                        description="We welcome you on your arrival and provide assistance with your language"
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                      data-aos-once="false"
+                    >
+                      <ChooseUsCard
+                        activeIcon={timeCarActiveIcon}
+                        inActiveIcon={timecarInactiveIcon}
+                        heading="Waiting Time"
+                        description="​Up to 45 minutes free waiting time from when the aircraft lands is included in your quote"
+                      />
+                    </div>
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                      data-aos-once="false"
+                    >
+                      <ChooseUsCard
+                        activeIcon={destinationActiveIcon}
+                        inActiveIcon={destinationInactiveIcon}
+                        heading="Destination"
+                        description="We transfer our customers to their destination​ with care and guaranteed safety to their luggage"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="">
-                <div
-                  data-aos="fade-left"
-                  data-aos-duration="500"
-                  data-aos-once="false">
-                  <ChooseUsCard
-                    activeIcon={timeCarActiveIcon}
-                    inActiveIcon={timecarInactiveIcon}
-                    heading="Waiting Time"
-                    description="​Up to 45 minutes free waiting time from when the aircraft lands is included in your quote"
-                  />
-                </div>
-                <div
-                  data-aos="fade-left"
-                  data-aos-duration="500"
-                  data-aos-once="false">
-                  <ChooseUsCard
-                    activeIcon={destinationActiveIcon}
-                    inActiveIcon={destinationInactiveIcon}
-                    heading="Destination"
-                    description="We transfer our customers to their destination​ with care and guaranteed safety to their luggage"
-                  />
-                </div>
-              </div>
-              </div>
-        
             </div>
           </div>
         </div>
-      </div>
       </div>
       {/* Section # 4 */}
 

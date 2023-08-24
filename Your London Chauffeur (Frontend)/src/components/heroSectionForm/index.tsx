@@ -106,6 +106,7 @@ const HeroSectionForm = () => {
           alert("Unable to find the start address, please make sure to select from drop-down");
         }
         else {
+          setTimeout(() => { })
           router.push(
             {
               pathname: '/select-car',

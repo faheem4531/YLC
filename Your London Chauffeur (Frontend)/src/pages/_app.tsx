@@ -37,11 +37,24 @@ export default function App({ Component, pageProps }: AppProps) {
           <title>Your London Chauffeur</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/logo.svg" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              "name": "Your London Chauffeur",
+              "url": "https://yourlondonchauffeur.co.uk/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })}
+          </script>
         </Head>
         <ToastContainer />
-          <Header currentPath={pathname} />
-          <Component {...pageProps} />
-          <Footer />
+        <Header currentPath={pathname} />
+        <Component {...pageProps} />
+        <Footer />
       </SessionProvider>
     </div>
   );

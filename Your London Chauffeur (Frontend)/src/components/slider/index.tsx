@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-import styles from './Slider.module.css';
-import mercedesImage from '../../images/pngs/mercedes-img.png';
-import api from '@/services/api';
+import styles from "./Slider.module.css";
+import mercedesImage from "../../images/pngs/mercedes-img.png";
+import api from "@/services/api";
 
 interface CarFeatures {
   passengers: string;
@@ -31,7 +31,7 @@ const Slider = () => {
   const [cars, setCars] = useState([]);
 
   const getCars = async () => {
-    const res = await api.get('car/getall');
+    const res = await api.get("car/getall");
     setCars(res.data);
   };
 
@@ -42,36 +42,33 @@ const Slider = () => {
   return (
     <div>
       <div
-        id='carouselExampleIndicators'
-        className='carousel slide'
-        data-bs-ride='carousel'
-      >
-        <div className='carousel-indicators'>
+        id="carouselExampleIndicators"
+        className="carousel slide"
+        data-bs-ride="carousel">
+        <div className="carousel-indicators">
           {cars.map((car: Car, index) => (
             <button
-              type='button'
+              type="button"
               key={car._id}
-              data-bs-target='#carouselExampleIndicators'
+              data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to={index.toString()}
               className={`${styles.carouselIndicator} ${
-                index === 0 && 'active'
+                index === 0 && "active"
               }`}
-              aria-current='true'
-              aria-label={`Slide ${index + 1}`}
-            ></button>
+              aria-current="true"
+              aria-label={`Slide ${index + 1}`}></button>
           ))}
         </div>
-        <div className='carousel-inner'>
+        <div className="carousel-inner">
           {cars.map((car: Car, index) => (
             <div
-              className={`carousel-item ${index === 0 && 'active'}`}
-              key={car._id}
-            >
+              className={`carousel-item ${index === 0 && "active"}`}
+              key={car._id}>
               <div className={styles.imageWrappeer}>
                 <Image
                   src={car.image || mercedesImage}
                   className={styles.carouselImage}
-                  alt='any'
+                  alt="any"
                   width={500}
                   height={300}
                 />
@@ -103,16 +100,15 @@ const Slider = () => {
                     Heathrow to Central London
                   </div>
                   <div className={styles.carPrice}>
-                    &pound; {car.class === 'Business Class' ? 100 : 150}
+                    &pound; {car.class === "Business Class" ? 100 : 150}
                   </div>
                 </div>
-                <Link href='/book-now'>
+                <Link href="/book-chauffeur-now">
                   <div
-                    data-aos='fade-up'
-                    data-aos-duration='500'
-                    data-aos-once='false'
-                    className={styles.buttonWarpper}
-                  >
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-once="false"
+                    className={styles.buttonWarpper}>
                     <button className={styles.sliderButton}>
                       Book This Ride
                     </button>
@@ -124,30 +120,26 @@ const Slider = () => {
         </div>
         <button
           className={`${styles.previousButton} carousel-control-prev`}
-          type='button'
-          data-bs-target='#carouselExampleIndicators'
-          data-bs-slide='prev'
-        >
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
           <div className={styles.previousIconContainer}>
             <span
               className={`${styles.previousIcon} carousel-control-prev-icon`}
-              aria-hidden='true'
-            ></span>
-            <span className='visually-hidden'>Previous</span>
+              aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </div>
         </button>
         <button
           className={`${styles.nextButton} carousel-control-next`}
-          type='button'
-          data-bs-target='#carouselExampleIndicators'
-          data-bs-slide='next'
-        >
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
           <div className={styles.nextIconContainer}>
             <span
               className={`${styles.nextIcon} carousel-control-next-icon`}
-              aria-hidden='true'
-            ></span>
-            <span className='visually-hidden'>Next</span>
+              aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </div>
         </button>
       </div>
