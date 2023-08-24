@@ -18,7 +18,8 @@ const AirportSlider = () => {
       <div
         id="carouselExampleIndicators1"
         className="carousel slide"
-        data-bs-ride="carousel">
+        data-bs-ride="carousel"
+      >
         <div className="carousel-indicators ">
           <button
             type="button"
@@ -26,31 +27,36 @@ const AirportSlider = () => {
             data-bs-slide-to="0"
             className={`${styles.carouselIndicator} active`}
             aria-current="true"
-            aria-label="Slide 1"></button>
+            aria-label="Slide 1"
+          ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators1"
             data-bs-slide-to="1"
             className={styles.carouselIndicator}
-            aria-label="Slide 2"></button>
+            aria-label="Slide 2"
+          ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators1"
             data-bs-slide-to="2"
             className={styles.carouselIndicator}
-            aria-label="Slide 3"></button>
+            aria-label="Slide 3"
+          ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators1"
             data-bs-slide-to="3"
             className={styles.carouselIndicator}
-            aria-label="Slide 4"></button>
+            aria-label="Slide 4"
+          ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators1"
             data-bs-slide-to="4"
             className={styles.carouselIndicator}
-            aria-label="Slide 5"></button>
+            aria-label="Slide 5"
+          ></button>
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -58,8 +64,10 @@ const AirportSlider = () => {
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-once="false"
-              className={styles.imageWrappeer}>
+              className={styles.imageWrappeer}
+            >
               <ImageTextOverlay
+                linkPath="/airports/heathrow-airport"
                 backgroundImage={manchesterAirport}
                 heading="London Heathrow Airport"
                 description="With all Heathrow Airport luxury chauffeur transfers punctuality is important to you as a client. You will 
@@ -67,6 +75,7 @@ const AirportSlider = () => {
                 step out of the arrivals hall. He will be holding a board with your name on it. You will expect us to be discreet at all times. If you prefer we can arrange a meeting point and phone or text you when you are in the baggage hall."
               />
               <ImageTextOverlay
+                linkPath="/airports/gatwick-airport"
                 backgroundImage={jayClarkAirport}
                 heading=" London Gatwick Airport "
                 description="Being only 6 miles from the centre of London, London City Airport offers convenience for business travellers into Canary Wharf and the City of London and Central London. With all London City Airport luxury chauffeur transfers punctuality is important to you as a client. You will be met by one of our uniformed professional chauffeurs who will be waiting to welcome for you when you step into the arrivals hall. He will be holding a board with your name on it. You will expect us to be discreet at all times. If you prefer we can arrange a meeting point and phone or text you when you are in the baggage hall. "
@@ -78,8 +87,10 @@ const AirportSlider = () => {
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-once="false"
-              className={styles.imageWrappeer}>
+              className={styles.imageWrappeer}
+            >
               <ImageTextOverlay
+                linkPath="/airports/luton-airport"
                 backgroundImage={londonOxfordAirport}
                 heading="London Luton Airport"
                 description="With Luton Airport chauffeur driven transfers punctuality is important to you as a client. You will be met 
@@ -87,8 +98,9 @@ const AirportSlider = () => {
                 You can rest assured your chauffeur will be smart, discreet and have a good knowledge of London and the surrounding areas. Sit back relax and enjoy your journey in comfort to your destination."
               />
               <ImageTextOverlay
+                linkPath="/airports/stansted-airport"
                 backgroundImage={heathrowAirport}
-                heading="London Stansted Aiport "
+                heading="London Stansted Airport "
                 description="With all Stansted Airport luxury chauffeur transfers punctuality is important to you as a client. You will 
                 be met by one of our uniformed professional chauffeurs who will be waiting for you when you step out 
                 of the arrivals hall. He will be holding a board with your name on it. You will expect us to be discreet at 
@@ -102,8 +114,10 @@ const AirportSlider = () => {
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-once="false"
-              className={styles.imageWrappeer}>
+              className={styles.imageWrappeer}
+            >
               <ImageTextOverlay
+                linkPath="/airports/farnborough-airport"
                 backgroundImage={lutonAirport}
                 heading="Farnborough Airport"
                 description="With all Farnborough Airport chauffeur driven transfers punctuality is important to you as a client. You 
@@ -114,6 +128,7 @@ const AirportSlider = () => {
                 good knowledge of London. Sit back relax and enjoy your journey."
               />
               <ImageTextOverlay
+                linkPath="/airports/biggin-hill-airport"
                 backgroundImage={stanstedAirport}
                 heading="Biggin Hill Airport "
                 description="Your London Chauffeur provides luxury services, making your travel stress-free. With experienced, professional 
@@ -127,8 +142,10 @@ const AirportSlider = () => {
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-once="false"
-              className={styles.imageWrappeer}>
+              className={styles.imageWrappeer}
+            >
               <ImageTextOverlay
+                linkPath="/airports/gatwick-airport"
                 backgroundImage={gatwickAirport}
                 heading="Gatwick Airport"
                 description="With all Gatwick Airport chauffeur driven transfers punctuality is important to you as a client. You will 
@@ -138,6 +155,7 @@ const AirportSlider = () => {
                 baggage hall."
               />
               <ImageTextOverlay
+                linkPath="/airports/raf-northholt-transfers"
                 backgroundImage={bigginHillAirport}
                 heading="Raf Northholt Transfers "
                 description="With all RAF Northolt Airport luxury chauffeur driven transfers punctuality is important to you as a 
@@ -154,8 +172,10 @@ const AirportSlider = () => {
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-once="false"
-              className={styles.imageWrappeer}>
+              className={styles.imageWrappeer}
+            >
               <ImageTextOverlay
+                linkPath="/airports/manchester-airport"
                 backgroundImage={farnboroughAirport}
                 heading="Manchester Airport Transfer "
                 description="With all Manchester Airport luxury chauffeur transfers punctuality is important to you as a client. You 
@@ -166,6 +186,7 @@ const AirportSlider = () => {
                 "
               />
               <ImageTextOverlay
+                linkPath="/airports/battersea-heliport"
                 backgroundImage={londonCityAirport}
                 heading="Battersea Heliport"
                 description="Your London Chauffeur provides luxury chauffeur driven cars for stress-free heliport transfers. With 
@@ -180,11 +201,13 @@ const AirportSlider = () => {
           className={`${styles.previousButton} carousel-control-prev`}
           type="button"
           data-bs-target="#carouselExampleIndicators1"
-          data-bs-slide="prev">
+          data-bs-slide="prev"
+        >
           <div className={styles.previousIconContainer}>
             <span
               className={`${styles.previousIcon} carousel-control-prev-icon`}
-              aria-hidden="true"></span>
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Previous</span>
           </div>
         </button>
@@ -192,11 +215,13 @@ const AirportSlider = () => {
           className={`${styles.nextButton} carousel-control-next`}
           type="button"
           data-bs-target="#carouselExampleIndicators1"
-          data-bs-slide="next">
+          data-bs-slide="next"
+        >
           <div className={styles.nextIconContainer}>
             <span
               className={`${styles.nextIcon} carousel-control-next-icon`}
-              aria-hidden="true"></span>
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Next</span>
           </div>
         </button>
