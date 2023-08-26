@@ -1,0 +1,234 @@
+.Container {
+  min-height: 100vh;
+  background-color: #F3F3F3;
+  padding-top: 3rem;
+}
+ /* Section # 1 */
+ .heroSection{
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/pngs/aboutus-hero-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 2rem 0;
+}
+.heroHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 15rem;
+}
+.heroParagraph{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-top: 1.5rem;
+  width: 48%;
+  margin-bottom: 15rem;
+}
+ /* Section # 1 */
+
+/* Section # 2 */
+.ourStorySubHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  color: #1A1A1A;
+  width: 80%;
+}
+
+ .ourStorySection{
+  padding: 4rem 1rem;
+ }
+ .ourStoryHeading{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  color: #1A1A1A;
+  }
+ .borderBottom{
+  border-bottom: 3px solid #2B59FF;
+  width: 180px;
+ }
+ .chauffeurImg{
+  width: 42%;
+  height: auto;
+  margin-top: 3rem;
+  margin-bottom: 3.4rem;
+ }
+ .ourStoryDescription{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #000;
+  margin-bottom: 2rem;
+  width: 80%;
+ }
+
+ .ourStoryDescription ul li {
+  list-style: none;
+  margin: 10px 0px 0px 0px;
+ }
+ .ourStoryDescription ul {
+  padding-left: 0px;
+ }
+/* Section # 2 */
+
+/* Section # 3 */
+.ourClientSection{
+  padding: 4rem 1rem;
+  background-color: #F3F3F3;
+
+}
+.ourClientsImages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  width: 80%;
+  margin-top: 4rem;
+}
+.clientsBrandLogo{
+  width: 160px;
+  height: 80px;
+}
+/* Section # 3 */
+
+
+@media only screen and (max-width:992px){
+  .ourStoryDescription{
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+   }
+   .heroParagraph{
+    width: 100%;
+  } 
+  .ourClientsImages{
+    gap: 50px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .ourStorySubHeading{
+    width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+  .heroHeading{
+    font-size: 60px;
+    line-height: 65px;
+    margin-top: 13rem;
+  }
+  .heroParagraph{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+  } 
+  .chooseUsHeading{
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .chooseUsSection{
+    padding: 4rem 1rem;
+  }
+  .chooseUsParagraph{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .heroSection{
+    min-height: 80vh;
+  }
+  .ourStoryDescription{
+    font-size: 14px;
+    line-height: 20px;
+   }
+   .chauffeurImg{
+    width: 60%;
+   } 
+   .ourStoryHeading{
+    font-size: 42px;
+    line-height: 50px;
+  } 
+  .ourStorySubHeading{
+  font-size: 38px;
+  line-height: 44px;
+  }
+  .borderBottom{
+    width: 50px;
+  }  
+}
+@media only screen and (max-width:500px){
+  .heroHeading{
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 9rem;
+  }
+  .heroParagraph{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+  .heroSection{
+    min-height: 60vh;
+  }
+  .chauffeurImg{
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   }
+   .ourStoryHeading{
+    font-size: 36px;
+    line-height: 44px;
+  } 
+
+  .ourStorySubHeading{
+    font-size: 32px;
+    line-height: 34px;
+    }
+  .ourStoryDescription{
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+   } 
+   .ourClientsImages{
+    gap: 30px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 3rem;
+  } 
+  .clientsBrandLogo{
+    width: 140px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width:370px){
+  .ourClientsImages{
+    gap: 40px;
+  }
+  .clientsBrandLogo{
+    width: 110px;
+    height: 55px;
+  }
+}
